@@ -27,12 +27,7 @@
 
 $result = mysqli_query($conn, $sql);
 
-//while ($row = mysqli_fetch_array($result)) {
-  //echo "City: " . $row['city'] . " Latitude: " . $row['latitude'] . " Longitude: " . $row['longitude'];
-//}
     if ($result->num_rows > 0) {
-        // Create a table to display the data
-       // echo '<table>';
         echo "<table class='spaced-table'>";
         echo '<tr>';
         echo '<th>Code</th>';
