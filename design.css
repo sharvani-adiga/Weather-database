@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #222;
+   /* background-image: url('https://source.unsplash.com/1600x900/?city');*/
+   background-image: url('bgrnd.jpg');
+    font-size: 120%;
+  }
+  
+  #top-right-link {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(247, 246, 246); 
+    background-color: rgb(14, 14, 14);
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-bar{
+    background-color: rgb(87, 81, 81);
+    border-radius: 25px;
+    height: 25px;
+    width: 50%;
+    color: antiquewhite;
+  }
+
+  .moreinfobtn {
+    margin: 0.5em;
+    border-radius: 15%;
+    border: none;
+    height: 44px;
+    width: 50px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .cardbtn {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  
+  select#cities {
+    padding: .1em;
+    border-radius: 18px;
+    font-family: inherit;
+}
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  
+  .spaced-table {
+    border-spacing: 15px;
+}
